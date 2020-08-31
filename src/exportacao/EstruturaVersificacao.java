@@ -12,6 +12,7 @@ public class EstruturaVersificacao {
     private String posicaoDasTonicas;
     @SuppressWarnings("unused")
     private String sentecaEscandida;
+    private String palavrasVerso;
     private Metrica metrica;
     private boolean isUsed = false;
     private float indiceSimilaridade;
@@ -20,20 +21,21 @@ public class EstruturaVersificacao {
     public EstruturaVersificacao() {
     }
 
-    public EstruturaVersificacao(String segmento, Integer numeroDeSilabas, String posicaoDasTonicas, String sentecaEscandida, Metrica metrica, boolean isUsed, float indiceSimilaridade) {
+    public EstruturaVersificacao(String segmento, Integer numeroDeSilabas, String posicaoDasTonicas, String sentecaEscandida, String palavrasVerso, Metrica metrica, boolean isUsed, float indiceSimilaridade) {
         this.segmento = segmento;
         this.numeroDeSilabas = numeroDeSilabas;
         this.posicaoDasTonicas = posicaoDasTonicas;
         this.sentecaEscandida = sentecaEscandida;
+        this.palavrasVerso = palavrasVerso;
         this.metrica = metrica;
         this.isUsed = isUsed;
         this.indiceSimilaridade = indiceSimilaridade;
     }
-
+    
     public Integer getNumeroDeSilabas() {
         return numeroDeSilabas;
     }
-
+     
     public String getPosicaoDasTonicas() {
         return posicaoDasTonicas;
     }
@@ -42,10 +44,14 @@ public class EstruturaVersificacao {
         return sentecaEscandida;
     }
 
+     public String getPalavrasVerso() {
+        return palavrasVerso;
+    }
+     
     public boolean isIsUsed() {
         return isUsed;
     }
-
+    
     public void setIsUsed(boolean isUsed) {
         this.isUsed = isUsed;
     }
