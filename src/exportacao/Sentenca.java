@@ -15,7 +15,9 @@ public class Sentenca {
     public String getSegmento() {
         return segmento;
     }
-    
+    public void setSegmento(String segmento) {
+        this.segmento = segmento;
+    }
     public Integer getLink(){
         return link;
     }
