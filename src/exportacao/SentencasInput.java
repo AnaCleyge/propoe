@@ -51,7 +51,7 @@ public class SentencasInput {
                 caminho.createNewFile();
             }
             streamOut = new FileOutputStream(caminho);
-            //XStream xstreamr = new XStream(new DomDriver());
+          
             xstream.toXML(sentencas, streamOut);
         } catch (FileNotFoundException exception) {
             System.out.println("FileNotFoundException: " + exception.getMessage());
@@ -75,10 +75,10 @@ public class SentencasInput {
                 xmlMap.delete();
                 System.out.println("Caminho do arquivo: " + novoArquivo);
                 xmlMap = new File(novoArquivo);
-                // xmlMap.createNewFile();
+              
             }
             streamOut = new FileOutputStream(xmlMap);
-            //XStream xstreamr = new XStream(new DomDriver());
+            
             xstream.toXML(sentencas, streamOut);
         } catch (FileNotFoundException exception) {
             System.out.println("FileNotFoundException: " + exception.getMessage());
